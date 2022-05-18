@@ -2,13 +2,6 @@ from scipy.io import loadmat
 import os
 import glob
 
-'''
-# TODO:
-- gt_score? user_score? 
-- the paper used superframe (have to match our frames to those)
-'''
-
-
 label_root = './SumMe/GT'
 data_root = './frames'
 
