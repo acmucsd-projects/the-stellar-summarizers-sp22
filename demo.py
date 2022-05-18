@@ -1,4 +1,4 @@
-from lib.video_dataset import  VideoFrameDataset, ImglistToTensor
+from video_dataset import  VideoFrameDataset, ImglistToTensor
 from torchvision import transforms
 import torch
 import matplotlib.pyplot as plt

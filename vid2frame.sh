@@ -24,4 +24,3 @@ do
   echo "Converting video and saving frames to ./frames$dirname"
   ffmpeg -i "$f" ./frames/$dirname/"img_%05d.jpg" > /dev/null
 done
-
