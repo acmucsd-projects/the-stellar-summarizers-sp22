@@ -5,7 +5,7 @@
 To download and unzip SumMe dataset
 
 ```shell
-./detch_dataset.py
+./fetch_dataset.py
 ```
 
 To convert videos into .jpg frames in identically titled subfolders
