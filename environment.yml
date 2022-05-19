@@ -1,0 +1,11 @@
+name: acmai
+channels:
+  - defaults
+dependencies:
+  - torchvision
+  - matplotlib
+  - requests
+  - opencv
+  - scipy
+  - pandas
+prefix: /Users/chychiang/opt/miniconda3/envs/acmai
