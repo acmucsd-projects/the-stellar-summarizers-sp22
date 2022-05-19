@@ -5,7 +5,10 @@ import glob
 label_root = './SumMe/GT'
 data_root = './frames'
 
-with open(data_root + '/annotation.txt', 'w') as f:
+with open(data_root + '/annotation.csv', 'w') as f:
+    # write header
+    header = 'video_name,start_frame,end_frame,gt_score\n'
+    f.write(header)
     for filename in os.listdir(label_root):
         
         # standardize file naming
@@ -24,7 +27,7 @@ with open(data_root + '/annotation.txt', 'w') as f:
         if len(glob.glob(data_root + '/' + video_name + '/*.jpg')) == num_frames:
             for i in range(num_frames):
                 label = data['gt_score'][i][0]
-                line = f'{video_name} {i} {i + 1} {label}\n'
+                line = f'{video_name}, {i}, {i + 1}, {label}\n'
                 f.write(line)
     
 
