@@ -2,10 +2,17 @@
 
 ## Setup
 
+Make sure you have the correct file permission and environment
+
+```shell
+chmod a+x ./vid2frame.sh # give executing permission to the bash script
+conda activate <your_env>
+```
+
 To download and unzip SumMe dataset
 
 ```shell
-./fetch_dataset.py
+python ./fetch_dataset.py
 ```
 
 To convert videos into .jpg frames in identically titled subfolders
@@ -17,7 +24,7 @@ To convert videos into .jpg frames in identically titled subfolders
 To read and convert labels into `annotation.txt` to facilitate data loading into pytorch
 
 ```shell
-./readmat.py
+python ./readmat.py
 ```
 
 TODO:
