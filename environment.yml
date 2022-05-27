@@ -1,5 +1,6 @@
 name: acmai
 channels:
+  - pytorch
   - defaults
 dependencies:
   - torchvision
@@ -7,4 +8,4 @@ dependencies:
   - requests
   - scipy
   - pandas
-prefix: /Users/chychiang/opt/miniconda3/envs/acmai
+  - tqdm
