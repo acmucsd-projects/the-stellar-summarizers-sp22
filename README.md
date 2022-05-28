@@ -31,9 +31,10 @@ python ./readmat.py
 TODO:
 
 - [ ] write scripts to standardize video resolution (downsample) (explore options: opencv? pytorch? ffmpeg?) 
-- [ ] implement loss history
+- [ ] implement loss history plotting
 - [ ] clean up `annotation.txt (possibly make it relative to each video for easier coding)
 - [ ] collect all the scripts into a util folder and a unified setup.py script
 - [ ] keep `requirements.txt` / `environment.yml` up to date
-- [ ] make sure the scripts work cross-platform (currently macos is ok)
+- [ ] look into a different file format of faster data loading (hd5?)
+- [x] make sure the scripts work cross-platform (currently macos is ok)
 - [x] fix label association of the data image
