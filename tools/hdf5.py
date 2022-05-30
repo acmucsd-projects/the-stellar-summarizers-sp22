@@ -4,8 +4,8 @@ import numpy as np
 from tqdm import tqdm
 
 
-f = h5py.File('frames.hdf5', 'w')
-root = './frames'
+f = h5py.File('../frames.hdf5', 'w')
+root = '../frames'
 
 for folder in tqdm(os.listdir(root)):
     if folder == 'annotation.csv' or folder == '.DS_Store': 
@@ -26,6 +26,8 @@ for folder in tqdm(os.listdir(root)):
 
 f.close()
 
-f = h5py.File("frames.hdf5", "r")
-print(len(f['Jumps']))
-f.close()
+# test script
+if __name__ == '__main__':
+    f = h5py.File("frames.hdf5", "r")
+    print(len(f['Jumps']))
+    f.close()

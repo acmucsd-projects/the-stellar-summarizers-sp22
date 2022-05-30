@@ -2,8 +2,8 @@ from scipy.io import loadmat
 import os
 import glob
 
-label_root = './SumMe/GT'
-data_root = './frames'
+label_root = '../SumMe/GT'
+data_root = '../frames'
 
 with open(data_root + '/annotation.csv', 'w') as f:
     # write header
